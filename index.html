@@ -46,9 +46,7 @@
         display: none !important;
     }
     .tableauWrapper {
-        margin: 2em auto; /* Center the visualization */
-        text-align: center; /* Center the content within the wrapper */
-        max-width: 100%; /* Ensure it does not exceed the parent container's width */
+        margin: 2em 0;
     }
     img {
         max-width: 100%;
@@ -77,6 +75,15 @@
         font-family: inherit;
         font-size: inherit;
         color: inherit;
+    }
+    .tableauPlaceholder {
+        display: flex;
+        justify-content: center;
+    }
+    .tableauWrapper {
+        width: 100%;
+        max-width: 1000px; /* Adjust the max width as needed */
+        margin: 0 auto;
     }
 </style>
 </head>
@@ -228,11 +235,13 @@
 
         observer.observe(divElement, { childList: true, subtree: true });
 
-        // Reset the visualization to ensure no bubble is pre-selected
-        var iframe = vizElement.getElementsByTagName('iframe')[0];
-        if (iframe) {
-            iframe.contentWindow.postMessage(JSON.stringify({ event: 'toolbar' }), '*');
-        }
+        // Clear any pre-existing state that might cause the auto-click issue
+        setTimeout(function() {
+            var iframe = vizElement.getElementsByTagName('iframe')[0];
+            if (iframe) {
+                iframe.contentWindow.postMessage(JSON.stringify({ event: 'toolbar' }), '*');
+            }
+        }, 1000); // Delay to ensure the visualization has fully loaded
     };
 </script>
   
