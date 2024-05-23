@@ -227,6 +227,12 @@
         });
 
         observer.observe(divElement, { childList: true, subtree: true });
+
+        // Reset the visualization to ensure no bubble is pre-selected
+        var iframe = vizElement.getElementsByTagName('iframe')[0];
+        if (iframe) {
+            iframe.contentWindow.postMessage(JSON.stringify({ event: 'toolbar' }), '*');
+        }
     };
 </script>
   
