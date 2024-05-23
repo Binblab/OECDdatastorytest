@@ -4,52 +4,77 @@
       <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Embedded Tableau Visualizations</title>
-    <style>
-        body {
-            margin: 15px;
-            padding: 15px;
-            background-color: #FAFAFA;
-            font-family: Arial, sans-serif;
-            color: #333;
-            line-height: 1.6;
-        }
-        h2, h3 {
-            color: #4e81bd;
-            font-weight: bold;
-        }
-        p {
-            text-align: justify;
-            margin: 1em 0;
-        }
-        ul {
-            padding-left: 1.5em;
-            margin: 1em 0;
-        }
-        a {
-            color: #4e81bd;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .source {
-            font-size: 12px;
-            color: #666;
-            text-align: center;
-        }
-        .tableauViz .tab-toolbar {
-            display: none !important;
-        }
-        .tableauWrapper {
-            margin: 2em 0;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-    </style>
+  <style>
+    body {
+        margin: 15px;
+        padding: 15px;
+        background-color: #FAFAFA;
+        font-family: Arial, sans-serif;
+        color: #333;
+        line-height: 1.6;
+    }
+    h2, h3 {
+        color: #4e81bd;
+        font-weight: bold;
+    }
+    p {
+        text-align: justify;
+        margin: 1em 0;
+        line-height: 1.5;
+        font-size: 10pt;
+        color: #333;
+    }
+    ul {
+        padding-left: 1.5em;
+        margin: 1em 0;
+    }
+    a {
+        color: #1a0dab;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    .source {
+        font-size: 12px;
+        color: #666;
+        text-align: center;
+    }
+    .tableauViz .tab-toolbar {
+        display: none !important;
+    }
+    .tableauWrapper {
+        margin: 2em 0;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    /* Subheading styling */
+    .subheading {
+        font-family: 'Arial Narrow';
+        font-size: 12pt;
+        color: #4e81bd;
+        margin-top: 12pt;
+        margin-bottom: 6pt;
+        font-weight: bold;
+    }
+    /* Strong tag styling for main headings */
+    strong {
+        font-size: 14pt;
+        color: #000;
+        margin-top: 12pt;
+        display: block;
+    }
+    /* Remove font changes */
+    span, u {
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+    }
+</style>
 </head>
 <body>
 <div>
@@ -205,32 +230,30 @@
 </p>
 
 
-    <p style="margin-top:6pt; margin-bottom:6pt;"><strong>What are Indigenous communities and knowledge systems?</strong></p>
-    <p style="margin-top:6pt; margin-bottom:6pt;">Data from the International Work Group for Indigenous Affairs (IWGIA) recognises over 5000 distinct communities in 90 countries as &lsquo;Indigenous&rsquo;.<a name="_ednref1"></a><a href="#_edn1" style="text-decoration:none;"><span style="font-size:7.33pt; color:#000000;"><sup>[1]</sup></span></a> This accounts for over 475 million people, or 5% of the global population<a name="_ednref2"></a><a href="#_edn2" style="text-decoration:none;"><span style="font-size:7.33pt; color:#000000;"><sup>[2]</sup></span></a>, protecting 80% of the planet&rsquo;s biodiversity.<a name="_ednref3"></a><a href="#_edn3" style="text-decoration:none;"><span style="font-size:7.33pt; color:#000000;"><sup>[3]</sup></span></a> However, a single, precise, and universally agreed definition of Indigenous Peoples has so far been elusive. The United Nations&rsquo; working definition of Indigenous Peoples includes three parts: 1) pre-colonial presence in a territory, 2) cultural, linguistic, and/or social distinctiveness from neighbouring populations, and 3) self-identification as Indigenous and/or recognition by other Indigenous groups.<a name="_ednref4"></a><a href="#_edn4" style="text-decoration:none;"><span style="font-size:7.33pt; color:#000000;"><sup>[4]</sup></span></a></p>
-    <p style="margin-top:6pt; margin-bottom:6pt;">Similarly, there is no standard definition of Indigenous and local knowledge systems; however, the <a href="https://www.ipbes.net/" style="text-decoration:none;"><u><span style="color:#0000ff;">Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES)</span></u></a> defines this as dynamic bodies of integrated, holistic, social and ecological knowledge, practices and beliefs pertaining to the relationship of living beings, including people, with one another and with their environments.<a name="_ednref5"></a><a href="#_edn5" style="text-decoration:none;"><span style="font-size:7.33pt; color:#000000;"><sup>[5]</sup></span></a></p>
-    <p style="margin-top:6pt; margin-bottom:6pt;">&nbsp;</p>
-    <p style="margin-top:6pt; margin-bottom:6pt;"><strong>Why Indigenous knowledge matters in STI policy making?</strong></p>
-    <p style="margin-top:6pt; margin-bottom:6pt; line-height:16pt; widows:2; orphans:2;"><span style="font-family:'Arial Narrow'; font-size:12pt; color:#4e81bd;">Improving accessibility and inclusion of Indigenous Peoples in STEM education and the research workforce</span></p>
-    <p style="margin-top:6pt; margin-bottom:6pt; line-height:13pt; widows:2; orphans:2;">The advancement of digital and green transitions will require governments to invest in cultivating the right skills and capabilities. For transitions to be inclusive, it is also essential to ensure that everyone, including groups that are currently underrepresented in national STI systems, can acquire these skills. A significant proportion of the initiatives in the Indigenous knowledge and communities&rsquo; portal focus on cultivating targeted skills and capabilities. Some of these are intended to foster STEM skills in local communities and younger generations. For example, the portal includes <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99997697" style="text-decoration:none;"><u><span style="color:#0000ff;">Australia&rsquo;s Maker Projects initiative</span></u></a>, which aims to foster creativity and inquiry-based learning and to support the development of STEM skills in students through hands-on learning. <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99997866" style="text-decoration:none;"><u><span style="color:#0000ff;">Mexico&rsquo;s&nbsp;</span></u><u><span style="font-size:10pt; color:#0000ff;">Indigenous Education Support Program</span></u></a><span style="color:#0070c0;">&nbsp;</span>also supports Indigenous youth in continuing with and completing education and vocational training.</p>
-    <p style="margin-top:6pt; margin-bottom:6pt; line-height:13pt; widows:2; orphans:2;">Other initiatives target the improvement of equity and representation in the public research workforce, including several New Zealand initiatives: <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99997588" style="text-decoration:none;"><u><span style="color:#0000ff;">Kanapu</span></u></a>,<span style="color:#272727; background-color:#ffffff;">&nbsp;</span><a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99997584" style="text-decoration:none;"><u><span style="color:#0000ff;">Ngā Puanga Pūtaiao Fellowships</span></u></a>, and <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99997589" style="text-decoration:none;"><u><span style="color:#0000ff;">Te Ara Pōtiki</span></u></a>, which are focused on supporting the attraction, retention and advancement of Māori talent and leadership in the national STI system. While many of these policies are concentrated on addressing the needs and challenges of specific Indigenous communities, others also have a broader equity, diversity and inclusion focus targeting a wider set of groups. For instance, initiatives like <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F3262" style="text-decoration:none;"><u><span style="font-size:10pt; color:#0000ff;">South Africa&rsquo;s National Strategy for Mathematics, Science and Technology Education</span></u></a> and the <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99997952" style="text-decoration:none;"><u><span style="color:#0000ff;">US&nbsp;</span></u><u><span style="font-size:10pt; color:#0000ff;">Minority University Research and Education Project</span></u></a><span style="color:#0070c0;">&nbsp;</span>are directed at other underrepresented groups or civil society in general.</p>
-    <p style="margin-top:6pt; margin-bottom:6pt; line-height:16pt; widows:2; orphans:2;"><span style="font-family:'Arial Narrow'; font-size:12pt; color:#4e81bd;">Respecting and promoting Indigenous data sovereignty in Open Science activities&nbsp;</span></p>
-    <p style="margin-top:6pt; margin-bottom:6pt;">In the area of Open Science, several initiatives have emerged to advance Indigenous self-determination and protect Indigenous identity and knowledge through data sovereignty. For example, Indigenous Data Sovereignty networks, in partnership with Indigenous scholars and leaders have recently stewarded the development of the global &lsquo;<a href="https://www.gida-global.org/care" style="text-decoration:none;"><u><span style="color:#0000ff;">CARE Principles for Indigenous Data Governance</span></u></a>&rsquo;, (Collective Benefit, Authority to Control, Responsibility, and Ethics).</p>
-    <p style="margin-top:6pt; margin-bottom:6pt;">The CARE Principles align with established work to improve data stewardship, such as the <a href="https://www.go-fair.org/fair-principles/" style="text-decoration:none;"><u><span style="color:#0000ff;">FAIR Principles</span></u></a> (targeted at data findability, accessibility, interoperability and reusability). They also build on this work to promote the equitable participation of Indigenous peoples as governors and primary beneficiaries of Indigenous data, and to protect against its misappropriation and misuse.<a name="_ednref6"></a><a href="#_edn6" style="text-decoration:none;"><span style="font-size:7.33pt; color:#000000;"><sup>[6]</sup></span></a> In this area, the portal captures relevant initiatives such as <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99991850" style="text-decoration:none;"><u><span style="color:#0000ff;">Canada&rsquo;s Tri-Agency research data management policy</span></u></a>, which explicitly recognises Indigenous data sovereignty and the need to use data management principles developed and approved by Indigenous communities when working with data related to research conducted by and with Indigenous Peoples. Similarly, the <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99997774" style="text-decoration:none;"><u><span style="color:#0000ff;">US Policy for Data Management and Sharing</span></u></a><span style="color:#0070c0;">&nbsp;</span>provides guidance for NIH-supported researchers working with American Indian or Alaskan Native communities to foster respectful partnerships and promote responsible data management practices.</p>
-    <p style="margin-top:6pt; margin-bottom:6pt; line-height:16pt; widows:2; orphans:2;"><span style="font-family:'Arial Narrow'; font-size:12pt; color:#4e81bd;">Partnering with Indigenous communities to tackle shared challenges&nbsp;</span></p>
-    <p style="margin-top:6pt; margin-bottom:6pt;">Together, Indigenous knowledge and Western science can jointly enhance and complement mutual contributions to several aspects of sustainability transitions. Some of these include bio-conservation, natural resource management, sustainable food production and harvesting, and the use of biological resources for improved health and wellbeing. For example, nature-based solutions are increasingly recognised as an important means to strengthen the resilience of natural or modified ecosystems and, in parallel, address climate change and biodiversity loss.<a name="_ednref7"></a><a href="#_edn7" style="text-decoration:none;"><span style="font-size:7.33pt; color:#000000;"><sup>[7]</sup></span></a></p>
-    <p style="margin-top:6pt; margin-bottom:6pt;">Ensuring that these solutions correspond with and refrain from extracting or misusing related Indigenous and local knowledge requires the adequate participation of these communities in their development. On this front, the Indigenous portal captures ongoing work of national governments. For example, Brazilian efforts include the programme, <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99997738" style="text-decoration:none;"><u><span style="color:#0000ff;">Indigenous approach to integrated fire management</span></u></a><span style="color:#0070c0;">,</span> and the <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99997736" style="text-decoration:none;"><u><span style="color:#0000ff;">law on access and benefits sharing of genetic resources and associated traditional knowledge</span></u></a>. In Colombia, there is also the programme, <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99998078" style="text-decoration:none;"><u><span style="color:#0000ff;">Scaling up climate ambition on land use and agriculture</span></u></a>. This partnership between the Government of Colombia, the United Nations Development Program and the Food and Agriculture Organization is focused, in part, on documenting traditional territorial practices and techniques to improve the resilience of agricultural crops to climate change.</p>
-    <p style="margin-top:6pt; margin-bottom:6pt; line-height:16pt; widows:2; orphans:2;"><span style="font-family:'Arial Narrow'; font-size:12pt; color:#4e81bd;">Weaving Indigenous knowledge systems into STI activities and STI policymaking approaches&nbsp;</span></p>
-    <p style="margin-top:6pt; margin-bottom:6pt;">At the same time, fostering awareness and acceptance of Indigenous science and knowledge systems can be difficult for various reasons. For example, there are essential differences in the foundations of Western, Indigenous and other knowledge systems. Where Western Science stresses objectivity and is largely driven by a desire to understand, predict and control nature, Indigenous Science relates to spirituality and wisdom, and supports adaptation to the natural world through understanding.<a name="_ednref8"></a><a href="#_edn8" style="text-decoration:none;"><span style="font-size:7.33pt; color:#000000;"><sup>[8]</sup></span></a> With the right knowledge and resources, STI policymakers can help to bridge some of these challenges.</p>
-    <p style="margin-top:6pt; margin-bottom:6pt;">The Indigenous portal profiles some examples of what STI policymakers are currently doing on this front. For example, the Canadian government has introduced the strategy, <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99995263" style="text-decoration:none;"><u><span style="color:#0000ff;">Setting New Directions to Support Indigenous Research and Research Training in Canada</span></u></a><span style="color:#0070c0;">,</span> as well as the <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99997644" style="text-decoration:none;"><u><span style="color:#0000ff;">Indigenous Science Division</span></u></a><span style="color:#0070c0;">,&nbsp;</span>while the US has formulated the recent <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99997761" style="text-decoration:none;"><u><span style="color:#0000ff;">Memorandum to Recognise Indigenous Knowledge</span></u></a><span style="color:#0070c0;">,&nbsp;</span>supplemented by <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99997760" style="text-decoration:none;"><u><span style="color:#0000ff;">Indigenous Knowledge Guidance for Federal Agencies</span></u></a>. These efforts promote collaboration between scientists, policymakers and Indigenous partners to co-develop approaches to research, training, and/or decision-making that integrate Western and Indigenous knowledge and contribute to reconciliation.&nbsp;</p>
-    <p style="margin-top:6pt; margin-bottom:6pt;"><strong>How can the STIP Compass Indigenous portal support STI policymakers?</strong></p>
-    <p style="margin-top:6pt; margin-bottom:6pt;">The portal allows policymakers to share information on STI policies focused on supporting and engaging with Indigenous communities and knowledge. Users can retrieve details on specific initiatives that match their search parameters and use interactive dashboards to investigate different trends among the portal&rsquo;s roughly 150 initiatives. The portal also provides quick access to a variety of related publications from academic publishers and intergovernmental organisations.</p>
-    <p style="margin-top:6pt; margin-bottom:6pt;">The thematic portal builds on the STIP Compass, a joint effort of the OECD and European Commission to make national STI policy data freely accessible and available to download. It also marks the inception of a new partnership between OECD and UNESCO to develop and promote content on the national, regional and international uptake of Indigenous knowledge within STI and related science frameworks and policies.</p>
-    <p style="margin-top:6pt; margin-bottom:6pt;">The pilot has been developed in collaboration with 14 partner countries and co-sponsored by the Government of Canada. The flags of participating countries are shown below.</p>
-    <p style="margin-top:6pt; margin-bottom:6pt;"><img src="https://live.staticflickr.com/65535/53739305580_a20298e4c4_b.jpg" width="620" height="128" alt="A group of flags of different countries/regions
+   <p><strong>What are Indigenous communities and knowledge systems?</strong></p>
+<p>Data from the International Work Group for Indigenous Affairs (IWGIA) recognizes over 5000 distinct communities in 90 countries as ‘Indigenous’.<a name="_ednref1"></a><a href="#_edn1"><sup>[1]</sup></a> This accounts for over 475 million people, or 5% of the global population<a name="_ednref2"></a><a href="#_edn2"><sup>[2]</sup></a>, protecting 80% of the planet’s biodiversity.<a name="_ednref3"></a><a href="#_edn3"><sup>[3]</sup></a> However, a single, precise, and universally agreed definition of Indigenous Peoples has so far been elusive. The United Nations’ working definition of Indigenous Peoples includes three parts: 1) pre-colonial presence in a territory, 2) cultural, linguistic, and/or social distinctiveness from neighboring populations, and 3) self-identification as Indigenous and/or recognition by other Indigenous groups.<a name="_ednref4"></a><a href="#_edn4"><sup>[4]</sup></a></p>
+<p>Similarly, there is no standard definition of Indigenous and local knowledge systems; however, the <a href="https://www.ipbes.net/">Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES)</a> defines this as dynamic bodies of integrated, holistic, social and ecological knowledge, practices and beliefs pertaining to the relationship of living beings, including people, with one another and with their environments.<a name="_ednref5"></a><a href="#_edn5"><sup>[5]</sup></a></p>
 
-Description automatically generated"></p>
-    <p style="margin-top:6pt; margin-bottom:6pt;">The Indigenous portal aims to collect and centralise related STI policy data to support international knowledge exchange and learning. Many of the themes evident in the Indigenous thematic portal cut across other STI policy areas. Some of these are highlighted in several additional satellite portals focused on net zero, space, the ocean economy, research security, and open science.</p>
-    <p style="margin-top:6pt; margin-bottom:6pt;">The portal is also continuously evolving, meaning that participating countries are able to update and add to the featured STI initiatives in real time. Other countries interested in contributing are also invited to reach out to <a href="mailto:Jessica.AMBLER@oecd.org" style="text-decoration:none;"><u><span style="color:#0000ff;">Jessica Ambler</span></u></a> for additional information.&nbsp;</p>
+<p><strong>Why Indigenous knowledge matters in STI policy making?</strong></p>
+<p class="subheading">Improving accessibility and inclusion of Indigenous Peoples in STEM education and the research workforce</p>
+<p>The advancement of digital and green transitions will require governments to invest in cultivating the right skills and capabilities. For transitions to be inclusive, it is also essential to ensure that everyone, including groups that are currently underrepresented in national STI systems, can acquire these skills. A significant proportion of the initiatives in the Indigenous knowledge and communities’ portal focus on cultivating targeted skills and capabilities. Some of these are intended to foster STEM skills in local communities and younger generations. For example, the portal includes <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99997697">Australia’s Maker Projects initiative</a>, which aims to foster creativity and inquiry-based learning and to support the development of STEM skills in students through hands-on learning. <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99997866">Mexico’s Indigenous Education Support Program</a> also supports Indigenous youth in continuing with and completing education and vocational training.</p>
+<p>Other initiatives target the improvement of equity and representation in the public research workforce, including several New Zealand initiatives: <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99997588">Kanapu</a>, <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99997584">Ngā Puanga Pūtaiao Fellowships</a>, and <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99997589">Te Ara Pōtiki</a>, which are focused on supporting the attraction, retention and advancement of Māori talent and leadership in the national STI system. While many of these policies are concentrated on addressing the needs and challenges of specific Indigenous communities, others also have a broader equity, diversity and inclusion focus targeting a wider set of groups. For instance, initiatives like <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F3262">South Africa’s National Strategy for Mathematics, Science and Technology Education</a> and the <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99997952">US Minority University Research and Education Project</a> are directed at other underrepresented groups or civil society in general.</p>
+<p class="subheading">Respecting and promoting Indigenous data sovereignty in Open Science activities</p>
+<p>In the area of Open Science, several initiatives have emerged to advance Indigenous self-determination and protect Indigenous identity and knowledge through data sovereignty. For example, Indigenous Data Sovereignty networks, in partnership with Indigenous scholars and leaders have recently stewarded the development of the global <a href="https://www.gida-global.org/care">CARE Principles for Indigenous Data Governance</a>, (Collective Benefit, Authority to Control, Responsibility, and Ethics).</p>
+<p>The CARE Principles align with established work to improve data stewardship, such as the <a href="https://www.go-fair.org/fair-principles/">FAIR Principles</a> (targeted at data findability, accessibility, interoperability and reusability). They also build on this work to promote the equitable participation of Indigenous peoples as governors and primary beneficiaries of Indigenous data, and to protect against its misappropriation and misuse.<a name="_ednref6"></a><a href="#_edn6"><sup>[6]</sup></a> In this area, the portal captures relevant initiatives such as <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99991850">Canada’s Tri-Agency research data management policy</a>, which explicitly recognizes Indigenous data sovereignty and the need to use data management principles developed and approved by Indigenous communities when working with data related to research conducted by and with Indigenous Peoples. Similarly, the <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99997774">US Policy for Data Management and Sharing</a> provides guidance for NIH-supported researchers working with American Indian or Alaskan Native communities to foster respectful partnerships and promote responsible data management practices.</p>
+<p class="subheading">Partnering with Indigenous communities to tackle shared challenges</p>
+<p>Together, Indigenous knowledge and Western science can jointly enhance and complement mutual contributions to several aspects of sustainability transitions. Some of these include bio-conservation, natural resource management, sustainable food production and harvesting, and the use of biological resources for improved health and wellbeing. For example, nature-based solutions are increasingly recognized as an important means to strengthen the resilience of natural or modified ecosystems and, in parallel, address climate change and biodiversity loss.<a name="_ednref7"></a><a href="#_edn7"><sup>[7]</sup></a></p>
+<p>Ensuring that these solutions correspond with and refrain from extracting or misusing related Indigenous and local knowledge requires the adequate participation of these communities in their development. On this front, the Indigenous portal captures ongoing work of national governments. For example, Brazilian efforts include the program, <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99997738">Indigenous approach to integrated fire management</a>, and the <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99997736">law on access and benefits sharing of genetic resources and associated traditional knowledge</a>. In Colombia, there is also the program, <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99998078">Scaling up climate ambition on land use and agriculture</a>. This partnership between the Government of Colombia, the United Nations Development Program and the Food and Agriculture Organization is focused, in part, on documenting traditional territorial practices and techniques to improve the resilience of agricultural crops to climate change.</p>
+<p class="subheading">Weaving Indigenous knowledge systems into STI activities and STI policymaking approaches</p>
+<p>At the same time, fostering awareness and acceptance of Indigenous science and knowledge systems can be difficult for various reasons. For example, there are essential differences in the foundations of Western, Indigenous and other knowledge systems. Where Western Science stresses objectivity and is largely driven by a desire to understand, predict and control nature, Indigenous Science relates to spirituality and wisdom, and supports adaptation to the natural world through understanding.<a name="_ednref8"></a><a href="#_edn8"><sup>[8]</sup></a> With the right knowledge and resources, STI policymakers can help to bridge some of these challenges.</p>
+<p>The Indigenous portal profiles some examples of what STI policymakers are currently doing on this front. For example, the Canadian government has introduced the strategy, <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99995263">Setting New Directions to Support Indigenous Research and Research Training in Canada</a>, as well as the <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99997644">Indigenous Science Division</a>, while the US has formulated the recent <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99997761">Memorandum to Recognise Indigenous Knowledge</a>, supplemented by <a href="https://stip.oecd.org/stip/indigenous-portal/policy-initiatives/2023%2Fdata%2FpolicyInitiatives%2F99997760">Indigenous Knowledge Guidance for Federal Agencies</a>. These efforts promote collaboration between scientists, policymakers and Indigenous partners to co-develop approaches to research, training, and/or decision-making that integrate Western and Indigenous knowledge and contribute to reconciliation.</p>
+<p><strong>How can the STIP Compass Indigenous portal support STI policymakers?</strong></p>
+<p>The portal allows policymakers to share information on STI policies focused on supporting and engaging with Indigenous communities and knowledge. Users can retrieve details on specific initiatives that match their search parameters and use interactive dashboards to investigate different trends among the portal’s roughly 150 initiatives. The portal also provides quick access to a variety of related publications from academic publishers and intergovernmental organisations.</p>
+<p>The thematic portal builds on the STIP Compass, a joint effort of the OECD and European Commission to make national STI policy data freely accessible and available to download. It also marks the inception of a new partnership between OECD and UNESCO to develop and promote content on the national, regional and international uptake of Indigenous knowledge within STI and related science frameworks and policies.</p>
+<p>The pilot has been developed in collaboration with 14 partner countries and co-sponsored by the Government of Canada. The flags of participating countries are shown below.</p>
+<p><img src="https://live.staticflickr.com/65535/53739305580_a20298e4c4_b.jpg" width="620" height="128" alt="A group of flags of different countries/regions Description automatically generated"></p>
+<p>The Indigenous portal aims to collect and centralize related STI policy data to support international knowledge exchange and learning. Many of the themes evident in the Indigenous thematic portal cut across other STI policy areas. Some of these are highlighted in several additional satellite portals focused on net zero, space, the ocean economy, research security, and open science.</p>
+<p>The portal is also continuously evolving, meaning that participating countries are able to update and add to the featured STI initiatives in real time. Other countries interested in contributing are also invited to reach out to <a href="mailto:Jessica.AMBLER@oecd.org">Jessica Ambler</a> for additional information.</p>
     <p style="margin-top:6pt; margin-bottom:6pt; line-height:13pt; widows:2; orphans:2;"><span style="font-size:10pt;">&nbsp;</span></p>
     <div style="clear:both;">
         <p style="margin-top:6pt; margin-bottom:0pt; text-align:left; font-size:8pt;"><span style="text-transform:uppercase;">&nbsp;</span></p>
