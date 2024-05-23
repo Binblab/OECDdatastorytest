@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Embedded Tableau Visualizations</title>
- <style>
+<style>
     body {
         margin: 0;
         padding: 15px;
@@ -46,7 +46,9 @@
         display: none !important;
     }
     .tableauWrapper {
-        margin: 2em 0;
+        margin: 2em auto; /* Center the visualization */
+        text-align: center; /* Center the content within the wrapper */
+        max-width: 100%; /* Ensure it does not exceed the parent container's width */
     }
     img {
         max-width: 100%;
