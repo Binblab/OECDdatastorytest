@@ -5,109 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Embedded Tableau Visualizations</title>
 <style>
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: #FAFAFA;
-        font-family: Arial, sans-serif;
-        color: #333;
-        line-height: 1.6;
-    }
-    .content {
-        margin: 0 auto;
-        padding: 15px;
-        max-width: 1000px;
-        background-color: #FAFAFA;
-    }
-    h2, h3, .subheading {
-        text-align: left;
-        margin: 1.5em 0 0.5em 0;
-        padding-left: 15px;
-    }
-    h2 {
-        font-size: 18pt;
-        color: #4e81bd;
-        font-weight: bold;
-    }
-    h3 {
-        font-size: 16pt;
-        color: #4e81bd;
-        font-weight: bold;
-    }
-    p {
-        text-align: justify;
-        margin: 1em 10px;
-        line-height: 1.5;
-        font-size: 12pt;
-        color: #333;
-    }
-    ul {
-        padding-left: 2em;
-        margin: 1em 10px;
-        list-style-type: disc;
-    }
-    a {
-        color: #4e81bd;
-        text-decoration: none;
-        border-bottom: 1px solid transparent;
-        transition: color 0.3s, border-bottom-color 0.3s;
-    }
-    a:hover {
-        color: #333;
-        border-bottom-color: #4e81bd;
-    }
-    .source {
-        font-size: 12px;
-        color: #666;
-        text-align: center;
-    }
-    .tableauViz .tab-toolbar {
-        display: none !important;
-    }
-    .tableauWrapper {
-        margin: 2em 0;
-        width: 100%;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 1em auto;
-    }
-    /* Subheading styling */
-    .subheading {
-        font-family: 'Arial Narrow', sans-serif;
-        font-size: 14pt;
-        color: #4e81bd;
-        font-weight: bold;
-    }
-    /* Strong tag styling for main headings */
-    strong {
-        font-size: 14pt;
-        color: #000;
-        margin-top: 12pt;
-        display: block;
-    }
-    /* Remove font changes */
-    span, u {
-        font-family: inherit;
-        font-size: inherit;
-        color: inherit;
-    }
-    .tableauPlaceholder {
-        display: flex;
-        justify-content: center;
-    }
-    blockquote {
-        margin: 1em 10px;
-        padding: 1em;
-        background-color: #f9f9f9;
-        border-left: 5px solid #4e81bd;
-        font-style: italic;
-        color: #555;
-    }
+   body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+.content {
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 1000px;
+    background-color: #FAFAFA;
+}
+h2, h3, .subheading {
+    text-align: center;
+    margin: 1.5em 0 0.5em 0;
+}
+h2 {
+    font-size: 18pt;
+    color: #4e81bd;
+    font-weight: bold;
+}
+h3 {
+    font-size: 16pt;
+    color: #4e81bd;
+    font-weight: bold;
+}
+p {
+    text-align: justify;
+    margin: 1em 10px;
+    line-height: 1.5;
+    font-size: 12pt;
+    color: #333;
+}
+ul {
+    padding-left: 2em;
+    margin: 1em 10px;
+    list-style-type: disc;
+}
+a {
+    color: #4e81bd;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.3s, border-bottom-color 0.3s;
+}
+a:hover {
+    color: #333;
+    border-bottom-color: #4e81bd;
+}
+.source {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+.tableauViz .tab-toolbar {
+    display: none !important;
+}
+.tableauWrapper {
+    margin: 2em 0;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em auto;
+}
+/* Subheading styling */
+.subheading {
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: 14pt;
+    color: #4e81bd;
+    font-weight: bold;
+}
+/* Strong tag styling for main headings */
+strong {
+    font-size: 14pt;
+    color: #000;
+    margin-top: 12pt;
+    display: block;
+}
+/* Remove font changes */
+span, u {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+.tableauPlaceholder {
+    display: flex;
+    justify-content: center;
+}
+blockquote {
+    margin: 1em 10px;
+    padding: 1em;
+    background-color: #f9f9f9;
+    border-left: 5px solid #4e81bd;
+    font-style: italic;
+    color: #555;
+}
+.authorship {
+    margin-left: 20%;
+    padding-left: 15px;
+}
 </style>
 </head>
 <body>
