@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Tableau Visualizations</title>
+    <style>
+        body {
+            margin: 15px;
+            padding: 15px;
+            background-color: #FAFAFA;
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        h2, h3 {
+            color: #4e81bd;
+            font-weight: bold;
+        }
+        p {
+            text-align: justify;
+            margin: 1em 0;
+        }
+        ul {
+            padding-left: 1.5em;
+            margin: 1em 0;
+        }
+        a {
+            color: #4e81bd;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .source {
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+        }
+        .tableauViz .tab-toolbar {
+            display: none !important;
+        }
+        .tableauWrapper {
+            margin: 2em 0;
+        }
+    </style>
+</head>
+<body>
+    <div style="clear:both;">
+        <p style="text-align:right; text-transform:uppercase; font-size:9pt;">&nbsp;</p>
+        <p style="text-align:right; font-size:9pt;"><strong><span style="font-family:Symbol;"></span></strong><strong>&nbsp;1</strong></p>
+    </div>
+
+    <p style="text-align:center;">
+        <img src="https://live.staticflickr.com/65535/53739223764_04a384d214_b.jpg" width="620" height="349" alt="A screenshot of a video game">
+    </p>
+
+    <h3>As sustainability transitions become increasingly critical, the invaluable contributions of Indigenous communities and their knowledge systems are gaining widespread recognition, particularly in the realms of biodiversity protection and restoration. But what are Indigenous communities and knowledge systems?</h3>
+    <p>Data from the International Work Group for Indigenous Affairs (IWGIA) recognises over 5,000 distinct communities in 90 countries as ‘Indigenous’. This accounts for over 475 million people, or 5% of the global population, protecting 80% of the planet’s biodiversity. However, a single, precise, and universally agreed definition of Indigenous Peoples has been elusive. The United Nations’ working definition includes three parts: 1) pre-colonial presence in a territory, 2) cultural, linguistic, and/or social distinctiveness from neighbouring populations, and 3) self-identification as Indigenous and/or recognition by other Indigenous groups.</p>
+    <p>Similarly, there is no standard definition of Indigenous and local knowledge systems. The Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES) defines these as dynamic bodies of integrated, holistic, social, and ecological knowledge, practices, and beliefs regarding the relationships between living beings, including people, and their environments.</p>
+
+    <h3>Why Indigenous Knowledge Matters in STI Policy Making?</h3>
+    <p>Improving accessibility and inclusion of Indigenous peoples in STEM education and the research workforce is crucial for inclusive digital and green transitions. Many initiatives in the Indigenous Knowledge and Communities portal focus on cultivating targeted skills, such as Australia's Maker Projects and Mexico’s Indigenous Education Support Programme, which foster STEM skills and support Indigenous youth in education. New Zealand initiatives like Kanapu and Ngā Puanga Pūtaiao Fellowships aim to improve equity and representation in the public research workforce by supporting Māori talent and leadership.</p>
+    <p>Respecting and promoting Indigenous data sovereignty in Open Science activities is essential. Initiatives like the global ‘CARE Principles for Indigenous Data Governance’ and Canada’s Tri-Agency research data management policy promote Indigenous self-determination and protect Indigenous knowledge through data sovereignty. The US Policy for Data Management and Sharing also provides guidelines for respectful and responsible data management with Indigenous communities.</p>
+    <p>Partnering with Indigenous communities to tackle shared challenges enhances sustainability transitions. Indigenous knowledge and Western science together contribute to bio-conservation, natural resource management, and sustainable food production. For example, Brazil’s Indigenous approach to integrated fire management and Colombia's Scaling up climate ambition on land use and agriculture programme demonstrate collaborative efforts in resilience and sustainability.</p>
+    <p>Weaving Indigenous knowledge systems into STI activities and policymaking requires awareness and acceptance of their unique perspectives. Initiatives like Canada’s strategy to support Indigenous research and the US Memorandum to Recognise Indigenous Knowledge highlight efforts to integrate Western and Indigenous knowledge, promoting collaboration and reconciliation in research and decision-making.</p>
+
+    <h3>Supporting STI Policymakers with the STIP Compass Indigenous Portal</h3>
+    <p>The STIP Compass Indigenous portal supports STI policymakers by providing access to detailed information on approximately 150 initiatives focused on Indigenous communities and knowledge, including interactive dashboards and related publications. This thematic portal, developed through collaborations with the OECD, European Commission, UNESCO, and 14 partner countries (#Argentina, #Australia, #Brazil, #Canada, #Chile, #Colombia, #Costa Rica, #Finland, #Mexico, #New Zealand, #Norway, #Peru, #United States and #South Africa), centralises STI policy data to facilitate international knowledge exchange and learning, highlighting themes that intersect with other STI policy areas.</p>
+
+    <div class='tableauPlaceholder tableauWrapper' id='viz1716460124355' style='position: relative'>
+        <noscript>
+            <a href='#'>
+                <img alt='Sheet 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;in&#47;indigenousbubble6test5&#47;Sheet1&#47;1_rss.png' style='border: none' />
+            </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='indigenousbubble6test5&#47;Sheet1' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;in&#47;indigenousbubble6test5&#47;Sheet1&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+        </object>
+    </div>
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1716460124355');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width = '100%';
+        vizElement.style.height = '600px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+
+        // Hide the toolbar after the viz loads
+        scriptElement.onload = function() {
+            var observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutation) {
+                    var toolbar = document.querySelector('.tab-toolbar');
+                    if (toolbar) {
+                        toolbar.style.display = 'none';
+                    }
+                });
+            });
+
+            observer.observe(divElement, { childList: true, subtree: true });
+        };
+    </script>
+
+    <p class="source">More data at <a href="https://stip.oecd.org/stip/indigenous-portal" target="_blank">https://stip.oecd.org/stip/indigenous-portal</a></p>
+
+    <p>The portal addresses the growing interest in Indigenous knowledge, recognising the need for diversity and the skills to tackle climate impacts. Policies focus on equity, diversity, inclusion, and support for Indigenous knowledge through various initiatives such as horizontal policy coordination, STI strategies, research funding, STEM skills, and net zero transitions.</p>
+
+    <p><strong>Finally, it is essential for the STI and STI policy sectors to ensure that Indigenous knowledge is not reduced to a mere extractable resource, divorced from the people, places, and cultures that create it. Truly meaningful progress in STI policymaking hinges on understanding and respecting this deep connection.</strong></p>
+
+    <p>
+        <a href="https://www.linkedin.com/feed/hashtag/?keywords=stipcompass&highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7121185515504046080" target="_blank">#stipcompass</a>
+        <a href="https://www.linkedin.com/feed/hashtag/?keywords=brazilg20presidency&highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7135461277673402370" target="_blank">#BrazilG20Presidency</a>
+        <a href="https://twitter.com/search?q=%23SciTechSustainableFuture%20&src=typed_query" target="_blank">#SciTechSustainableFuture</a>
+    </p>
+
+    <h3>Sources and further reading:</h3>
+    <ul>
+        <li>EC-OECD (2024), STIP Compass: International Database on Science, Technology and Innovation Policy (STIP), edition May 22, 2024, <a href="https://stip.oecd.org" target="_blank">https://stip.oecd.org</a>.</li>
+        <li>Agenda for Transformative Science, Technology and Innovation Policies, <a href="https://www.oecd.org/innovation/inno/transformative-agenda-sti.htm" target="_blank">https://www.oecd.org/innovation/inno/transformative-agenda-sti.htm</a>.</li>
+        <li>OECD Science and Technology Policy Ministerial, 23-24 April 2024 | Paris, France, <a href="https://www.oecd-events.org/mm24" target="_blank">https://www.oecd-events.org/mm24</a>.</li>
+        <li>IWGIA (2018), <em>Facts about indigenous peoples</em>, <a href="https://www.iwgia.org/en/news/3268-facts-indigenous-peoples" target="_blank">https://www.iwgia.org/en/news/3268-facts-indigenous-peoples</a>.</li>
+        <li>UNESCO (n.d.), <em>Indigenous Peoples: Respect NOT Dehumanization</em>, <a href="https://www.un.org/en/fight-racism/vulnerable-groups/indigenous-peoples" target="_blank">https://www.un.org/en/fight-racism/vulnerable-groups/indigenous-peoples</a>.</li>
+        <li>Cresswell, <em>Australia State of the Environment</em>, <a href="https://doi.org/10.26194/f1rh-7r05" target="_blank">https://doi.org/10.26194/f1rh-7r05</a>.</li>
+        <li>Lightfoot, <em>Global Indigenous Politics: A subtle revolution</em>, Routledge.</li>
+        <li>IPBES (n.d.), <em>Indigenous and local knowledge system</em>, <a href="https://www.ipbes.net/glossary-tag/indigenous-and-local-knowledge-system" target="_blank">https://www.ipbes.net/glossary-tag/indigenous-and-local-knowledge-system</a>.</li>
+        <li>Carroll, S. et al. (2021), "Operationalizing the CARE and FAIR Principles for Indigenous data futures", <em>Scientific Data</em>, Vol. 8/1, <a href="https://doi.org/10.1038/s41597-021-00892-0" target="_blank">https://doi.org/10.1038/s41597-021-00892-0</a>.</li>
+        <li>Dunlop, T. et al. (2024), "The evolution and future of research on Nature-based Solutions to address societal challenges", <em>Communications Earth & Environment</em>, Vol. 5/1, <a href="https://doi.org/10.1038/s43247-024-01308-8" target="_blank">https://doi.org/10.1038/s43247-024-01308-8</a>.</li>
+        <li>Mazzocchi, F. (2018), "Why "Integrating" Western Science and Indigenous Knowledge is not an easy task: What lessons could be learned for the future of knowledge?", <em>Journal of Future Studies</em>, Vol. 22/3, pp. 19-34, <a href="https://jfsdigital.org/wp-content/uploads/2018/03/02WhyIntegrating.pdf" target="_blank">https://jfsdigital.org/wp-content/uploads/2018/03/02WhyIntegrating.pdf</a>.</li>
+    </ul>
+</body>
+</html>
