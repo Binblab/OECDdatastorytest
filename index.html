@@ -5,111 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Embedded Tableau Visualizations</title>
 <style>
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: #FAFAFA;
-        font-family: Arial, sans-serif;
-        color: #333;
-        line-height: 1.6;
-    }
-    .container {
-        max-width: 800px; /* Adjust as needed */
-        margin: 0 auto;
-        padding: 15px;
-        margin-left: 100px; /* Add more margin to the left */
-    }
-    h1 {
-        font-size: 24pt; /* Reduced font size for the title */
-        text-align: center;
-        color: #2c598a;
-        font-weight: bold;
-       margin-left: -120px; /* Shifted left */
-        margin-right: 20px;
-    }
-    h2, h3, strong {
-        color: #2c598a; /* Darker blue for headings */
-        font-weight: bold;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    p {
-        text-align: justify;
-        margin: 1em 20px;
-        line-height: 1.8; /* Increased line height for better readability */
-        font-size: 16px; /* Increased font size for better readability */
-        color: #333;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    ul {
-        padding-left: 1.5em;
-        margin: 1em 20px; /* Consolidated list with margins */
-        padding-left: 10px; /* Added padding for better readability */
-        padding-right: 10px; /* Added padding for better readability */
-    }
-    a {
-        color: #4e81bd; /* Light blue for hyperlinks */
-        text-decoration: none;
-        border-bottom: 1px solid transparent;
-        font-weight: bold; /* Added font weight */
-    }
-    a:hover {
-        text-decoration: underline;
-        border-bottom: 1px solid #4e81bd;
-    }
-    .source {
-        font-size: 12px;
-        color: #666;
-        text-align: center;
-    }
-    .tableauViz .tab-toolbar {
-        display: none !important;
-    }
-    .tableauWrapper {
-        margin: 2em 20px; /* Consolidated Tableau wrapper with margins */
-        width: 100%;
-        max-width: 1000px; /* Adjust the max width as needed */
-        margin: 0 auto;
-    }
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
-    /* Subheading styling */
-    .subheading {
-        font-family: 'Arial Narrow';
-        font-size: 14pt; /* Increased font size */
-        color: #2c598a; /* Darker blue for subheadings */
-        margin-top: 12pt;
-        margin-bottom: 6pt;
-        font-weight: bold;
-        text-align: left; /* Centered subheading */
-        margin-left: -65px; /* Shifted left */
-    }
-    /* Strong tag styling for main headings */
-    strong {
-        font-size: 14pt; /* Reduced font size */
-        color: #555; /* Neutral color for strong text */
-        margin-top: 12pt;
-        display: block;
-        margin-left: -77px; /* Shifted left */
-        margin-right: 20px; /* Added margin on the right */
-        text-align: left; /* Default left alignment */
-    }
-    /* Remove font changes */
-    span, u {
-        font-family: inherit;
-        font-size: inherit;
-        color: inherit;
-    }
-    .tableauPlaceholder {
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
-    }
+   body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 15px;
+    margin-left: 100px; /* Add more margin to the left */
+}
+
+h1 {
+    font-size: 24pt; /* Reduced font size for the title */
+    text-align: center;
+    color: #2c598a;
+    font-weight: bold;
+    margin-left: -120px; /* Shifted left */
+    margin-right: 20px;
+}
+
+h2, h3, strong {
+    color: #2c598a; /* Darker blue for headings */
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+p {
+    text-align: justify;
+    margin: 1em 20px;
+    line-height: 1.8; /* Increased line height for better readability */
+    font-size: 16px; /* Increased font size for better readability */
+    color: #333;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ul {
+    padding-left: 1.5em;
+    margin: 1em 20px; /* Consolidated list with margins */
+    padding-left: 10px; /* Added padding for better readability */
+    padding-right: 10px; /* Added padding for better readability */
+}
+
+a {
+    color: #4e81bd; /* Light blue for hyperlinks */
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    font-weight: bold; /* Added font weight */
+}
+
+a:hover {
+    text-decoration: underline;
+    border-bottom: 1px solid #4e81bd;
+}
+
+.source {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+
+.tableauViz .tab-toolbar {
+    display: none !important;
+}
+
+.tableauWrapper {
+    margin: 2em 20px; /* Consolidated Tableau wrapper with margins */
+    width: 100%;
+    max-width: 1000px; /* Adjust the max width as needed */
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Subheading styling */
+.subheading {
+    font-family: 'Arial Narrow';
+    font-size: 14pt; /* Increased font size */
+    color: #2c598a; /* Darker blue for subheadings */
+    margin-top: 12pt;
+    margin-bottom: 6pt;
+    font-weight: bold;
+    text-align: left; /* Centered subheading */
+    margin-left: -65px; /* Shifted left */
+}
+
+/* Strong tag styling for main headings */
+strong {
+    font-size: 14pt; /* Reduced font size */
+    color: #555; /* Neutral color for strong text */
+    margin-top: 12pt;
+    display: block;
+    margin-left: -83px; /* Shifted left */
+    margin-right: 20px; /* Added margin on the right */
+    text-align: left; /* Default left alignment */
+}
+
+/* Remove font changes */
+span, u {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+.tableauPlaceholder {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Additional styling for alignment */
+.authorship {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.authorship strong {
+    font-size: 18px;
+}
 </style>
 </head>
 <body>
