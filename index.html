@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Embedded Tableau Visualizations</title>
 <style>
-  body {
+body {
     margin: 0;
     padding: 0;
     background-color: #FAFAFA;
@@ -108,7 +108,7 @@ strong {
     color: #555; /* Neutral color for strong text */
     margin-top: 12pt;
     display: block;
-    margin-left: -88px; /* Shifted left */
+    margin-left: -83px; /* Shifted left */
     margin-right: 20px; /* Added margin on the right */
     text-align: left; /* Default left alignment */
 }
@@ -130,10 +130,11 @@ span, u {
 .authorship {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; /* Align items to the start (left) */
     margin-top: 20px;
     font-size: 16px;
-    text-align: center;
+    text-align: left; /* Left align text */
+    margin-left: 20px; /* Align with the title */
 }
 
 .authorship strong {
